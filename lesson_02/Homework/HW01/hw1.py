@@ -1,10 +1,14 @@
-from unittest import result
+# Напишите программу, которая принимает на вход вещественное число и показывает сумму его цифр.
 
+# Пример:
 
-chislo = int (input('Введите вещественное число: '))
-int = 0
-while i in chislo:
-    # while chislo != 0:
-    int = (chislo % 10) + chislo
+# - 6782 -> 23
+# - 0,56 -> 11
 
-    print(int)
+num = input("Введите вещественное число: ")
+sum = 0
+for i in num:
+            if i != ".": 
+                sum += int(i)
+print('Введите корректное число')
+print(sum)
